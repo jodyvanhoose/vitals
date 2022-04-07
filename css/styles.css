@@ -1,0 +1,17 @@
+.view-height {
+  height: 100vh;
+}
+
+.my-padding {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+
+.my-padding2 {
+  padding-left: .6rem;
+  padding-right: .6rem;
+}
+
+span {
+  width: 3.8rem;
+}
