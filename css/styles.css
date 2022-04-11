@@ -15,3 +15,51 @@
 span {
   width: 3.8rem;
 }
+
+.modal span{
+  width: 8rem;
+}
+
+img{
+  display: none;
+}
+
+/* .loading{
+  top: 150px;
+  left: 105px;
+}
+
+@media (min-width: 576px){
+  .loading{
+    top: 150px;
+    left: 140px;
+  }
+}
+
+@media (min-width: 768px){
+  .loading{
+    top: 150px;
+    left: 50px;
+  }
+}
+
+@media (min-width: 992px){
+  .loading{
+    top: 150px;
+    left: 115px;
+  }
+}
+
+@media (min-width: 1200px){
+  .loading{
+    top: 150px;
+    left: 157px;
+  }
+}
+
+@media (min-width: 1400px){
+  .loading{
+    top: 150px;
+    left: 203px;
+  }
+} */
