@@ -22,6 +22,28 @@ span {
 
 img{
   display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#results{
+  position: relative;
+}
+
+#loading{
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  z-index: 10;
+}
+
+#report{
+  display: none;
+}
+
+#run{
+  display: block;
+  
 }
 
 /* .loading{

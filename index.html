@@ -42,86 +42,99 @@
                 </div>
               </div>
             </div>
-            <!-- <form id="myForm" action=""> -->
-            <div class="form-group my-2">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">Name</span>
+            <form id="myForm" action="">
+
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Name</span>
+                  </div>
+                  <input required type="text" class="form-control" id="name" placeholder="Pt Name">
                 </div>
-                <input type="text" class="form-control" id="name" placeholder="Pt Name" required>
+                <small class="error-message"></small>
               </div>
-            </div>
 
-            <div class="form-group my-2">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text ">Age</span>
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text ">Age</span>
+                  </div>
+                  <input required type="number" class="form-control" id="age" placeholder="Pt Age">
                 </div>
-                <input type="number" class="form-control" id="age" placeholder="Pt Age">
+                <small class="error-message"></small>
               </div>
-            </div>
 
-            <div class="form-group my-2">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text my-padding"><i class="bi bi-heart-pulse-fill text-danger"></i></span>
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text my-padding"><i class="bi bi-heart-pulse-fill text-danger"></i></span>
+                  </div>
+                  <input required type="number" class="form-control" id="hr" placeholder="Heart Rate">
                 </div>
-                <input type="number" class="form-control" id="hr" placeholder="Heart Rate">
+                <small class="error-message"></small>
               </div>
-            </div>
 
-            <div class="form-group my-2">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text my-padding"><i class="bi bi-heart-fill text-danger"></i></span>
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text my-padding"><i class="bi bi-heart-fill text-danger"></i></span>
+                  </div>
+                  <input required type="number" class="form-control" id="bp-s" placeholder="Systolic BP">
                 </div>
-                <input type="number" class="form-control" id="bp-s" placeholder="Systolic BP">
+                <small class="error-message"></small>
               </div>
-            </div>
 
-            <div class="form-group my-2">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text my-padding"><i class="bi bi-heart-fill text-danger"></i></span>
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text my-padding"><i class="bi bi-heart-fill text-danger"></i></span>
+                  </div>
+                  <input required type="number" class="form-control" id="bp-d" placeholder="Diastolic BP">
                 </div>
-                <input type="number" class="form-control" id="bp-d" placeholder="Diastolic BP">
+                <small class="error-message"></small>
               </div>
-            </div>
 
-            <div class="form-group my-2">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="bi bi-thermometer-half text-primary my-padding2"></i></span>
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i
+                        class="bi bi-thermometer-half text-primary my-padding2"></i></span>
+                  </div>
+                  <input required type="number" class="form-control" id="temp" placeholder="Temperature">
                 </div>
-                <input type="number" class="form-control" id="temp" placeholder="Temperature">
+                <small class="error-message"></small>
               </div>
-            </div>
 
-            <div class="form-group my-2">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text my-padding"><i class="bi bi-wind text-primary"></i></span>
+              <div class="form-group my-2">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text my-padding"><i class="bi bi-wind text-primary"></i></span>
+                  </div>
+                  <input required type="number" class="form-control" id="resp" placeholder="Respirations">
                 </div>
-                <input type="number" class="form-control" id="resp" placeholder="Respirations">
+                <small class="error-message"></small>
               </div>
-            </div>
 
-            <div class="form-group">
-              <div class="d-grid gap-2">
-                <button id="btn" class="btn btn-primary" type="button" data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop">Report</button>
+              <div id="run" class="form-group">
+                <div class="d-grid gap-2">
+                  <button id="btn1" class="btn btn-primary" type="submit">Save</button>
+                </div>
               </div>
-            </div>
 
-            <!-- </form> -->
+              <div class="form-group mt-2" id="report">
+                <div class="d-grid gap-2">
+                  <button id="btn" class="btn btn-primary" type="button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Run report</button>
+                </div>
+              </div>
 
-            <!-- loader -->
-            <div class="loading" id="loading">
-              <img src="img/loading.gif" alt="">
-            </div>
+            </form>
 
 
             <!-- modal -->
+
+
+
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
               aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
@@ -133,6 +146,9 @@
                   <div class="modal-body">
 
                     <div id="results">
+                      <div class="loading" id="loading">
+                        <img src="img/loading.gif" alt="">
+                      </div>
 
                       <div class="form-group">
                         <div class="input-group">
@@ -192,13 +208,12 @@
 
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="close" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Print</button>
                   </div>
                 </div>
               </div>
             </div>
-
 
 
 
@@ -218,7 +233,8 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
 
-    <script src="app.js"></script>
+    <script src="form.js"></script>
+    <script src="report.js"></script>
 </body>
 
 </html>
