@@ -35,7 +35,6 @@ function report(){
   // define pt name
   document.getElementById('name-result').textContent = localStorage.getItem('name');
 
-    
   // define pt age
   document.getElementById('age-result').textContent = JSON.parse(localStorage.getItem('age'));
 
@@ -152,7 +151,7 @@ function reportRange(){
   }
 
   // vitals HR for ages 11-14
-  if (vitalAge <= 11 && vitalAge >= 14){
+  if (vitalAge <= 11 && vitalAge >= 12){
     if(vitalPulse <= 59 || vitalPulse >= 106){
       document.getElementById('hr-result').classList.add('bg-danger');
       document.getElementById('hr-result').style.color = 'white';  
@@ -231,4 +230,13 @@ function reportRange(){
 
   }
 
+}
+
+// print report page
+function printReport(){
+  document.getElementById('hr-result').style.color = 'black';
+  document.getElementById('bp-result').style.color = 'black';
+  document.getElementById('temp-result').style.color = 'black';
+  document.getElementById('resp-result').style.color = 'black';
+  window.print();
 }
