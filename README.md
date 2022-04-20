@@ -10,7 +10,7 @@
 Vitals is a wellness monitoring web application that will allow users to enter various vital stats and run a report that will dispaly the stats and indicate if the vitals are within normal range via a color palatte.
 
 ## Warning
-This app is intended for personal use and should not be used to treat or diagnose ones self or others. If vitals are in abnormal range or you are not feeling well __PLEASE SEEK PROFESSIONAL MEDICAL ATTENTION__.
+This app is intended for personal use only and should not be used to treat or diagnose ones self or others. If vitals are in abnormal range or you are not feeling well __PLEASE SEEK PROFESSIONAL MEDICAL ATTENTION__.
 
 ## Instructions
 1. Fill out all fields (If all fields are not filled out the app will prompt you to fill out required fields)
@@ -29,6 +29,7 @@ This app is intended for personal use and should not be used to treat or diagnos
 * Clean simple design
 * Mobile first approach
 * Responsive Design
+* Saves vitals data to localStorage
 * Color changing palatte to show if vitals are in normal range
 * Printer friendly report page
 * Dark mode
@@ -40,8 +41,12 @@ ___
 ## Technologies/Languages
 * HTML
 * CSS
-* Bootstrap CSS framework
+* Bootstrap framework
 * Javascript
 
-
-
+___
+### Sources
+* American Heart Association
+* Pediatric Associates
+* On Health
+* Healthline
