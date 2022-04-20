@@ -1,6 +1,6 @@
-![Markdown Logo](/img/clipboard-pulse.jpg) 
-# Vitals | A personal wellness monitoring app
+# ![Markdown Logo](/img/clipboard-pulse.jpg) Vitals | A personal wellness monitoring app
 
+  
  
 
 ### Author: Jody VanHoose
