@@ -1,3 +1,7 @@
+body{
+  background-color: #c4c4c4;
+}
+
 .view-height {
   height: 100vh;
 }
@@ -43,7 +47,22 @@ img{
 
 #run{
   display: block;
-  
+}
+
+
+
+
+
+/* dark mode settings through windows prefered settings */
+@media (prefers-color-scheme: dark){
+  body{
+    background-color: #111;
+  }
+
+  .card{
+    background-color: #333;
+    color: #fff;
+  }
 }
 
 
@@ -54,6 +73,10 @@ img{
   #report-footer,
   .form-switch{
     display: none;
+  }
+
+  .modal{
+    top: -125px;
   }
 
 }

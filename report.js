@@ -192,7 +192,7 @@ function reportRange(){
 
   // adults vitals
   if (vitalAge >= 13){
-    if(vitalPulse <= 59 && vitalPulse >= 101){
+    if(vitalPulse <= 59 || vitalPulse >= 101){
       document.getElementById('hr-result').classList.add('bg-danger');
       document.getElementById('hr-result').style.color = 'white';  
     }else{

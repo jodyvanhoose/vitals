@@ -10,18 +10,14 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/styles.css">
-  <title>Vitals</title>
+  <title>Vitals | Wellnes Monitoring</title>
 </head>
 
-<style>
-
-</style>
-
-<body class="bg-dark">
+<body class="bg-custom-color">
   <div class="container view-height">
     <div class="row">
-      <div class="col-md-6 mx-auto">
-        <div class="card card-body bg-light text-center mt-5">
+      <div class="col-md-8 mx-auto">
+        <div class="card card-body text-center mt-5 border-white bg-custom-color-2">
 
           <div class="container position-relative">
             <div class="row">
@@ -29,17 +25,7 @@
                 <h1 class="text-start"><i class="bi bi-clipboard2-pulse"></i></h1>
               </div>
               <div class="col-6">
-                <h1 class="heading">Vitals</h1>
-              </div>
-              <div class="col">
-                <div class="input-group">
-                  <div class="form-check form-switch">
-                    <h3 class="position-absolute top-50 start-100 translate-middle">
-                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                      <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                    </h3>
-                  </div>
-                </div>
+                <h1 class="heading text-end">Vitals</h1>
               </div>
             </div>
             <form id="myForm" action="">
@@ -115,12 +101,14 @@
                 <small class="error-message"></small>
               </div>
 
+              <!-- save button -->
               <div id="run" class="form-group">
                 <div class="d-grid gap-2">
                   <button id="btn1" class="btn btn-primary" type="submit">Save</button>
                 </div>
               </div>
 
+              <!-- run report button/hidden until form has been saved -->
               <div class="form-group mt-2" id="report">
                 <div class="d-grid gap-2">
                   <button id="btn" class="btn btn-primary" type="button" data-bs-toggle="modal"
@@ -131,7 +119,7 @@
             </form>
 
 
-            <!-- modal -->
+            <!-- modal/report -->
 
 
 
@@ -145,6 +133,7 @@
                   </div>
                   <div class="modal-body">
 
+                    <!-- loading image -->
                     <div id="results">
                       <div class="loading" id="loading">
                         <img src="img/loading.gif" alt="">
@@ -208,25 +197,20 @@
 
                   </div>
                   <div id="report-footer" class="modal-footer">
+
+                    <!-- close report button/clears form -->
                     <button type="button" id="close" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    <!-- print report -->
                     <button onclick="printReport()" type="button" class="btn btn-primary">Print</button>
                   </div>
                 </div>
               </div>
             </div>
-
-
-
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
