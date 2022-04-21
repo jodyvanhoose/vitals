@@ -57,7 +57,7 @@ img{
 
 
 
-/* dark mode settings through windows prefered settings */
+/* dark mode settings through operating system prefered settings */
 @media (prefers-color-scheme: dark){
   body{
     background-color: #111;

@@ -199,14 +199,13 @@ function reportRange(){
       document.getElementById('hr-result').classList.add('bg-success');
       document.getElementById('hr-result').style.color = 'white';
     }
-    if(vitalSystolic <= 105 || vitalSystolic >= 144 || vitalDiastolic <= 61 || vitalDiastolic >= 95){
+    if(vitalSystolic <= 105 || vitalSystolic >= 130 || vitalDiastolic <= 61 || vitalDiastolic >= 90){
       document.getElementById('bp-result').classList.add('bg-danger');
       document.getElementById('bp-result').style.color = 'white';
     }
-    else if(vitalSystolic <= 110 || vitalSystolic >= 121 || vitalDiastolic <= 69 || vitalDiastolic >= 81){
+    else if(vitalSystolic <= 110 || vitalSystolic >= 120 || vitalDiastolic <= 69 || vitalDiastolic >= 80){
       document.getElementById('bp-result').classList.add('bg-warning');
       document.getElementById('bp-result').style.color = 'black';
-    
     }
     else{
       document.getElementById('bp-result').classList.add('bg-success');

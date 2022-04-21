@@ -24,6 +24,7 @@ if(inputName.value !== ''){
 
               // display run report button
               submitBtn.style.display = 'block';
+              
 
               // save to local storage
               localStorage.setItem('name', inputName.value);
